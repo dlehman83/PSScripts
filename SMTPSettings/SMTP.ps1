@@ -1,0 +1,1 @@
+$smtp = new-object system.Net.Mail.SmtpClient("yoursmtpserverhere")
