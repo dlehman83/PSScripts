@@ -12,6 +12,8 @@ In most cases each sub folder is self contained, exceptions are documented.
 
 [EMIS Reports](/EMIS%20Report/) is a simple script to copy an EMIS report from a SFTP server and email it.  
 
+[Google Drive FileACSs](/GoogleDriveFileACL/) This script with gam commands will remove all file shares from an OU of users.  Used to stop sharing files owned by former staff or students.  
+
 [SMTP Settings](/SMTPSettings/) is a dependency for other scripts to keep the SMTP server settings.  
 
 <br><br><br>
