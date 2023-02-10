@@ -16,6 +16,8 @@ In most cases each sub folder is self contained, exceptions are documented.
 
 [SMTP Settings](/SMTPSettings/) is a dependency for other scripts to keep the SMTP server settings.  
 
+[Azure MFA Pilot Group](/Azure/) is a script to put users into a group who have signed up for the Microsoft Authenticator app or registered a FIDO key in Azure.  
+
 <br><br><br>
 
 
