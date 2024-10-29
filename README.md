@@ -6,7 +6,9 @@ In most cases each sub folder is self contained, exceptions are documented.
 
 ## Scripts
 
-[CB Clear Profiles](/CBClearProfiles/) Will clear profiles from Chromebooks when they have less than 10% or less than 1GB of disk space for active devices. 
+[CB Clear Profiles](/CBClearProfiles/) Will clear profiles from Chromebooks when they have less than 10% or less than 1GB of disk space for active devices.
+
+[Chrome Policy Reports](/ChromePolicyReports/) Creates csv reports of Chrome apps and policies.
 
 [Disable Expired AD Accounts](/DisableExpired/) This script will disable expired AD accounts so GCDS will suspend the users Google account.
 
@@ -19,7 +21,5 @@ In most cases each sub folder is self contained, exceptions are documented.
 [Azure MFA Pilot Group](/Azure/) is a script to put users into a group who have signed up for the Microsoft Authenticator app or registered a FIDO key in Azure.  
 
 <br><br><br>
-
-
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/dlehman83)
