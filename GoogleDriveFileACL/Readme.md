@@ -39,9 +39,9 @@ Run this file through the powershell script providing an output file name.
 .\fileacl.ps1 -fileaclcsv .\2024filelistperms.csv -deletecsv .\2024del.csv
 ```
 
-Look though the output file to make sure you are deleting the file permissions you want.
+Look through the output file to make sure you are deleting the file permissions you want.
 
-run this gam command to delete the file permissions in the above file.  
+Run this gam command to delete the file permissions in the above file.  
 
 ``` cmd
 gam csv 2024del.csv gam user "~Owner" delete drivefileacl "~driveFileId" "~permissionId"
