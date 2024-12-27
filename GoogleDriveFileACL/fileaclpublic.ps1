@@ -16,24 +16,27 @@ Import-Csv $fileaclcsv | ForEach-Object -Process {
 
                 #skip owners
                 if ($row."permissions.$i.role" -eq "Owner") { continue }
-               
-        
+                
+                #find public
+                $public = ("anyone", "domain")
+
+
+                if ($row."permissions.$i.type" -notin $public ) { continue }
+
+
                 $Properties = [Ordered] @{
                         "Owner"        = $Row.owner
-                        "driveFileId"  = $Row.ID
-                        "Name"         = $Row.name
+                        "Name"         = $Row.Name
                         "modifiedby"   = $row."lastModifyingUser.emailAddress"
                         "lastmodified" = $row.modifiedTime
-                        "permissionId" = "id:" + $row."permissions.$i.id"
                         "type"         = $row."permissions.$i.type"
                         "role"         = $row."permissions.$i.role"
-                        "emailAddress" = $row."permissions.$i.emailAddress"
-                        "perm num"     = $i
                         "path"         = $row."path.0"
-
-
+                        "permissionId" = "id:" + $row."permissions.$i.id"
+                        "driveFileId"  = $Row.ID
                                       
                 }
+
 
 
                 New-Object PSObject -Property $Properties
